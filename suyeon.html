@@ -1,0 +1,348 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>danika's HomePage</title>  
+
+  <style>
+      @font-face {
+    font-family: 'Cafe24Shiningstar';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+  </style>
+  <style> 
+     *  { font-family: 'Cafe24Shiningstar'; box-sizing: border-box; }
+    #header  { 
+      background: white;
+       color: black; 
+       font-size: 43px; 
+       text-align: center; 
+       height: 15%; 
+       padding-top: 10px; 
+       margin-bottom: 10px;
+      } 
+    #menu, #menu2 {
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #menu  {  
+      position: absolute;
+      flex-direction: column;
+      background: white; 
+      color: black; 
+      height: 250px ; 
+      width: 150px;
+      z-index: 1;  
+      /* overflow-x: hidden;  */
+      text-align: Center ; 
+      float: left;
+      font-size: 25px; 
+      margin-top: 60px;
+    } 
+    #menu2  {  
+      white-space: nowrap;
+      background: white; 
+      color: black;  
+      font-size: 25px;  
+      width: auto; 
+      height: 50px; 
+      display: inline-block;
+      border:1px solid black;
+    }
+    #content  { background: white; float: left;  width: 60%; height: 75%} 
+
+
+    #footer  { background: white; 
+      height: 10%; 
+      clear : both; 
+      text-align: Center;
+    }   
+    #container  { height: 400px; }  
+    #menu a,
+    #menu li { 
+      width: 100%;
+      color: black; 
+      padding: 10px;  
+      text-decoration: none; 
+      display: block; 
+     
+    }
+    #menu2  a { 
+      width: 100%;
+      color: black; 
+      padding: 10px; 
+      text-decoration: none;  
+      display: inline-block;  
+      text-align: center;
+    } 
+    #menu a:hover  { 
+      background-color: rgb(182, 182, 182);  
+      color: black; 
+    }
+    #menu2 a:hover { 
+      background-color: rgb(182, 182, 182);  
+      color: black; 
+    } 
+    #C, #JAVA, #LINUX, #ANDROID, #WEB {
+      font-size : 25px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    #license{
+      font-size : 25px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    #ta1, #ta2, #ta3, #ta4 {
+      font-size : 25px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    #w1, #w2, #w3, #w4 {
+      font-size : 25px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+
+    li { 
+      list-style-position : inside; 
+    } 
+    ul{
+      list-style: none;
+      margin: 10;
+      padding: 10px;
+    }
+
+    table { table-layout: fixed;  
+    width: 50%; 
+    height : 200px;
+    background: white;
+    margin : auto;
+    margin-top: 5%; 
+    }  
+    
+    caption{
+      margin-bottom: 15px;
+    }
+  th { text-align: center; border: 1px  gray ; }     
+  td { text-align: center; border: 1px  white; } 
+
+  tr:first-child { background: lightgray; } 
+  
+  #footer { 
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+  }
+ 
+  li{
+    list-style: none;
+  }
+
+  hr{
+    width: 200px;
+  }
+  
+    </style> 
+
+    <style>
+  .dropdown-content { display: none;  position: absolute;
+    background-color: white; font-size: 18px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);   
+  }
+
+  .dropdown-content a { display: block;  color: white; padding: 12px 16px;
+    text-decoration: none; text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: darkgray;  } 
+  .dropdown:hover .dropdown-content { display: block; }
+  
+  .box-wrap > div {
+    display: none;
+  }
+  
+  .box-wrap > div:target {
+      display: block;
+    }
+
+    .c1:hover , .c2:hover, .c3:hover, .c4:hover, .c5:hover, .c6:hover, .c7:hover, .c8:hover, .c9:hover, .c10:hover, .c11:hover{ background: rgb(245, 208, 208); } 
+
+    .box1{
+      float: left;
+      margin-top: 5%;
+      margin-left: 350px;
+    }
+    .box2{
+      float: left;
+      margin-top: 5%;
+      margin-left: 10%;     
+    }
+    .box3{
+      float: left;
+      margin-top: 5%;
+      margin-left: 10%;
+    }
+    </style>
+
+      
+   
+   
+
+
+</head>
+
+<body>   
+<div id="container" >  
+ <div id="header"> danika's HomePage</div>
+  <div id="menu">
+    <li class="dropdown">
+        <a href="#" class="dropbtn">시간표</a>
+        <div class="dropdown-content">
+          <a href="#ta1">2021학년도 1학기</a> 
+          <a href="#ta2">2021학년도 2학기</a> 
+          <a href="#ta3">2022학년도 1학기</a> 
+          <a href="#ta4">2022학년도 2학기</a> 
+        </div>
+      </li> 
+    <a href="#license"> 자격증 </a>
+    <li class="dropdown">
+        <a href="#" class="dropbtn">대외활동</a>
+        <div class="dropdown-content">
+          <a href="#w1">2019학년도</a> 
+          <a href="#w2">2020학년도</a> 
+          <a href="#w3">2021학년도</a> 
+          <a href="#w4">2022학년도</a> 
+        </div>
+      </li> 
+    
+
+  </div>
+  <div id="menu2"> 
+    <a href="#C"> C </a>
+    <a href="#JAVA"> JAVA </a>
+    <a href="#LINUX"> Linux </a>
+    <a href="#ANDROID"> Android </a>
+    <a href="#WEB"> Web </a>
+  </div> 
+  
+  <div>
+     
+      <div class="box-wrap">
+        <div id="C">
+          C언어<br>
+          printf("Hello World!");<br><hr><br>
+          대학생활에 필요한 프로그램 개발(팀프로젝트)<br>
+          - 파일 입출력을 사용하여 학사일정 검색 부분 담당
+        </div>
+        <div id="JAVA">
+          JAVA<br>
+          System.out.println("Hello World!");<br><hr><br>
+          - 카페에서 사용하는 키오스크 개발<br>
+          - 전주 홍보 프로그램 개발(팀프로젝트)<br>
+            버튼과 즐겨찾기 & 그래픽 담당 
+        </div>
+        <div id="LINUX">
+          LINUX<br>
+          [root@localhost]#<br><hr><br>
+          서버구축<br>
+          - ip 121.154.39.101<br>
+          - FTP, SMAB, APM, DB
+        </div>
+      
+        <div id="ANDROID">
+          ANDROID<br>
+          android_text="Hello World!";<br><hr><br>
+          "홈카페" 앱 개발중
+        </div>
+        <div id="WEB">
+          WEB<br><br><hr><br>
+          현재 이 웹사이트가 danika가 만든 첫번째 웹사이트랄까..?
+        </div>
+        <div id="ta1">
+          <table border="1"><caption>2021학년도 1학기 시간표</caption>
+            <tr><th>시간</th><th>월요일</th><th>화요일</th><th>수요일</th><th>목요일</th><th>금요일</th></tr>
+            <tr><td>9시 수업</td><td></td><td class="c1">모바일프로그래밍</td><td class="c6">임베디드시스템</td><td class="c10">서버관리</td><td></td></tr>
+            <tr><td>10시30분 수업</td><td class="c2">서버관리</td><td></td><td></td><td></td><td class="c7">임베디드시스템</td></tr>
+            <tr><td>1시 수업</td><td></td><td class="c3">컴퓨터구조</td><td class="c8">웹프로그래밍</td><td></td><td></td></tr>
+            <tr><td>2시30분 수업</td><td class="c4">웹프로그래밍</td><td></td><td class="c9">프로그래밍언어론</td><td class="c11">컴퓨터구조</td><td></td></tr>
+            <tr><td>4시 수업</td><td class="c5">프로그래밍언어론</td><td></td><td></td><td></td><td></td></tr>
+        </table>
+      </div>
+      <div id="ta2">
+        <img src="로딩.jpg" alt="로딩중" width="250px" height="250px"><br><br>
+        수리중
+      </div>
+      <div id="ta3">
+        <img src="로딩.jpg" alt="로딩중" width="250px" height="250px"><br><br>
+        수리중
+      </div>
+      <div id="ta4">
+        <img src="로딩.jpg" alt="로딩중" width="250px" height="250px"><br><br>
+        수리중
+      </div>
+      <div id="license">
+        <div class="box1">
+        취득현황<br><hr>
+        <ul>
+          <li>컴퓨터활용능력2급</li>
+          <li>MOS MASTER</li>
+          <li>ICDL</li>
+          <li>ITQ MASTER</li>
+          <li>GTQ1급</li>
+          <li>일러스트2급</li>
+        </ul>
+      </div>
+      <div class="box2">
+        진행중<hr>
+        <ul>
+          <li>컴퓨터활용능력1급</li>
+          <li>리눅스마스터2급</li>
+
+        </ul>
+      </div>
+      <div class="box3">
+        취득예정<hr>
+        <ul>
+          <li>정보처리기사</li>
+          <li>한국사</li>
+        </ul>
+      </div>
+      </div>
+      <div id="w1">
+        2019학년도 대외활동<br><hr>
+        <ul>
+          <li>1학년 과대표</li>
+        </ul>
+      </div>
+      <div id="w2">
+        2020학년도 대외활동<br><hr>
+        <ul>
+          <li>2학년 과대표</li>
+          <li>제 16대 'THE BEST' 공과대학 학생회 홍보부원</li>
+        </ul>
+      </div>
+      <div id="w3">
+        2021학년도 대외활동<br><hr>
+        <ul>
+          <li>3학년 과대표</li>
+          <li>학생봉사단 '가온' 봉사단원</li>
+          <li>취업동아리 '공확성' 동아리원</li>
+        </ul>
+      </div>
+      <div id="w4">
+        2022학년도 대외활동<br><hr><br>
+        4학년땐 어떤 활동을 해볼까요?
+      
+      </div>
+   
+  </div>  
+ 
+  <div id="footer"> danika &nbsp; instargram @lsy_05.04</div>
+</div>
+</body>
+</html>
